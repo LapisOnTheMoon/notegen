@@ -3,9 +3,9 @@ import requests
 import sys
 from datetime import datetime
 import re
-tag_re = re.compile(r'(<!--.*?-->|<[^>]*>)')
-name = "John Hammond" 
-code = ""
+tag_re = re.compile(r'(<!--.*?-->|<[^>]*>)') # Removes HTML tags from task data
+name = "Change this" 
+code = "" # Room code for TryHackMe room
 
 def get_room_code(s):
 	if len(s) == 1:
